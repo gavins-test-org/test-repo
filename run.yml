@@ -1,0 +1,14 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: alpine
+
+run:
+  dir: test-repo
+  path: ./run.sh
+
+inputs:
+- name: test-repo
